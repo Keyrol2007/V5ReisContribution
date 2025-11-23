@@ -1,32 +1,13 @@
-using System.Diagnostics;
+// Controllers/HomeController.cs
 using Microsoft.AspNetCore.Mvc;
-using V5ReisContribution.Models;
 
-namespace V5ReisContribution.Controllers
+namespace KarolTickets.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        public IActionResult Index() => View();
+        public IActionResult Tickets() => View();
+        public IActionResult Media() => View();
+        public IActionResult Contact() => View();
     }
 }

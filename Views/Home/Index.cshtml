@@ -1,8 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿<!-- Views/Home/Index.cshtml -->
+@{
+    ViewData["Title"] = "Home";
 }
+<div class="row align-items-center g-4">
+    <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">School Event Tickets</h1>
+        <p class="lead">Get your tickets, see promos, and share the event with QR codes.</p>
+        <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-lg" href="/Home/Tickets"><i class="bi bi-ticket-perforated"></i> Buy Tickets</a>
+            <a class="btn btn-outline-secondary btn-lg" href="/Home/Media"><i class="bi bi-play-circle"></i> Promo Videos</a>
+        </div>
+    </div>
+    <div class="col-lg-6 text-center">
+        <img src="/images/poster.jpg" alt="Event Poster" class="img-fluid rounded shadow" />
+        <p class="text-muted mt-2">Poster preview (replace poster.jpg in wwwroot/images)</p>
+    </div>
+</div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<hr class="my-5" />
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-cash-coin"></i> Easy Payment</h5>
+                <p class="card-text">Pay via bank transfer or cash at school. Use the QR code for instant payment.</p>
+                <a href="/Home/Tickets" class="btn btn-outline-primary">See ticket info</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-camera-video"></i> Promo Media</h5>
+                <p class="card-text">Watch the promotional videos and share them with friends.</p>
+                <a href="/Home/Media" class="btn btn-outline-primary">Open media</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-qr-code"></i> QR Codes</h5>
+                <p class="card-text">Scan to visit the website or go directly to ticket info and payment.</p>
+                <a href="/Home/Tickets#qr" class="btn btn-outline-primary">Get QR codes</a>
+            </div>
+        </div>
+    </div>
 </div>

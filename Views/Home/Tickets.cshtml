@@ -1,0 +1,46 @@
+﻿<!-- Views/Home/Tickets.cshtml -->
+@{
+    ViewData["Title"] = "Tickets";
+}
+<div class="row g-4">
+    <div class="col-lg-7">
+        <h1 class="fw-bold">Tickets</h1>
+        <p class="lead">Price: <span class="badge bg-success">$10</span> per ticket</p>
+
+        <h5 class="mt-4">How to buy</h5>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Contact Karol or visit the booth at school.</li>
+            <li class="list-group-item">Pay via bank transfer or cash on site.</li>
+            <li class="list-group-item">Show your payment confirmation to receive your ticket.</li>
+        </ul>
+
+        <h5>Payment instructions</h5>
+        <div class="alert alert-secondary">
+            <strong>Bank:</strong> Aruba Bank • <strong>Account:</strong> 123456789 • <strong>Ref:</strong> Your Name + "Ticket"
+        </div>
+
+        <h5 id="qr" class="mt-4">QR codes</h5>
+        <p>Scan to pay or open this page instantly:</p>
+        <div class="d-flex flex-wrap gap-4">
+            <div class="text-center">
+                <img class="qr img-thumbnail" src="/images/payment-qr.png" alt="Payment QR" />
+                <div class="small text-muted mt-1">Payment QR</div>
+            </div>
+            <div class="text-center">
+                <img class="qr img-thumbnail" src="/images/site-qr.png" alt="Website QR" />
+                <div class="small text-muted mt-1">Website QR</div>
+            </div>
+        </div>
+        <p class="text-muted mt-2">Replace the QR images in wwwroot/images with your own.</p>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-info-circle"></i> Notes</h5>
+                <p class="card-text mb-1">Bring a valid school ID when collecting tickets.</p>
+                <p class="card-text mb-0">Refunds: Not available after event week starts.</p>
+            </div>
+        </div>
+    </div>
+</div>

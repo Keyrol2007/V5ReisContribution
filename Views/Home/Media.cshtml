@@ -1,0 +1,35 @@
+﻿<!-- Views/Home/Media.cshtml -->
+@{
+    ViewData["Title"] = "Media";
+}
+<h1 class="fw-bold mb-3">Promo Videos</h1>
+<p class="text-muted">Upload your video to wwwroot/videos and set the filename(s) below.</p>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <video controls poster="/images/poster.jpg">
+                <source src="/videos/promo1.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+        <p class="mt-2"><strong>Promo 1:</strong> Main trailer</p>
+    </div>
+    <div class="col-md-6">
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <video controls poster="/images/poster.jpg">
+                <source src="/videos/promo2.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+        <p class="mt-2"><strong>Promo 2:</strong> Behind the scenes</p>
+    </div>
+</div>
+
+<hr class="my-4" />
+
+<h5>Shareable links</h5>
+<ul>
+    <li><a href="/videos/promo1.mp4" target="_blank">Download Promo 1</a></li>
+    <li><a href="/videos/promo2.mp4" target="_blank">Download Promo 2</a></li>
+</ul>
