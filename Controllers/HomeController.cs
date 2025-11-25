@@ -9,5 +9,7 @@ namespace KarolTickets.Controllers
         public IActionResult Tickets() => View();
         public IActionResult Media() => View();
         public IActionResult Contact() => View();
+        public IActionResult Sponsors() => View();
     }
 }
+
